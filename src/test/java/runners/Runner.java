@@ -6,9 +6,16 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {
+                "pretty",
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt"
+        },
         features = "src/test/resources/features",
-        glue = "com/Appium/step_defs",
-        tags = "@list",
+        glue = {"stepdefinition"},
+        tags = "@wifi",
         dryRun = false
 
 
@@ -16,4 +23,5 @@ import org.junit.runner.RunWith;
 
 )
 public class Runner {
+
 }
