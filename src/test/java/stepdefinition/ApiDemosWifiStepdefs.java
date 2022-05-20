@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.ApiDemosPage;
+import utilities.Driver;
 
 public class ApiDemosWifiStepdefs {
     ApiDemosPage api=new ApiDemosPage();
@@ -36,5 +37,7 @@ public class ApiDemosWifiStepdefs {
     @Then("Ok tikla")
     public void okTikla() {
         api.okButton.click();
+        Driver.closeDriver();
     }
+
 }

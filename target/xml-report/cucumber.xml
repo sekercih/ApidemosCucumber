@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="45.711">
-    <testcase classname="ApiDemos Wifi Test" name="Goster Gununu" time="44.913">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.022">
+    <testcase classname="ApiDemos Wifi Test" name="Goster Gununu" time="31.335">
         <system-out>
             <![CDATA[Given Prefenceye tikla......................................................passed
 And Prefence dependencies tikla.............................................passed
