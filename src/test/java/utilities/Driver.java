@@ -14,8 +14,8 @@ public class Driver {
     }
 
     private static AndroidDriver<AndroidElement> driver;
-    public static String userName = "hkksrkc1";
-    public static String accessKey = "sVkrv1YNrVGCWusu9rrk";
+    public static String userName = "yaseminzeynepksa_A7opHm";
+    public static String accessKey = "h31AyDbunJjphRWKyuDf";
 
     public static AndroidDriver<AndroidElement> get() {
         if (driver == null) {
@@ -27,10 +27,10 @@ public class Driver {
                 case "android":
 
                     desiredCapabilities.setCapability("platformName", "Android");
-                    desiredCapabilities.setCapability("platformVersion", "11.0");
-                    desiredCapabilities.setCapability("deviceName", "Pixel_2");
+                    desiredCapabilities.setCapability("platformVersion", "10.0");
+                    desiredCapabilities.setCapability("deviceName", "Pixel3");
                     desiredCapabilities.setCapability("automationName", "UiAutomator2");
-                    desiredCapabilities.setCapability("app", "C:\\Users\\Mehmet\\Desktop\\com.ApidemosCucumber\\apidemos.apk");
+                    desiredCapabilities.setCapability("app", "C:\\Users\\Mehmet\\Desktop\\ApidemosCucumber\\hepsiburada.apk");
 
                     try {
                         driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
@@ -41,9 +41,13 @@ public class Driver {
                     break;
                 case "browserstack":
 
-                    desiredCapabilities.setCapability("os_version", "9.0");
-                    desiredCapabilities.setCapability("device", "Google Pixel 3");
-                    desiredCapabilities.setCapability("app", "bs://83f53bd8d4aad4259091bc9d409667afad19a2a9");
+
+                    desiredCapabilities.setCapability("platformName", "android");
+                    desiredCapabilities.setCapability("platformVersion", "9.0");
+                    desiredCapabilities.setCapability("deviceName", "Google Pixel 3");
+                    desiredCapabilities.setCapability("app", "bs://9fe47c215bfd70bf2d17158b69262494861ff89c");
+
+
                     try {
                         driver = new AndroidDriver<AndroidElement>(new URL("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub"), desiredCapabilities);
                         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

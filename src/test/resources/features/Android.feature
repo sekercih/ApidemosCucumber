@@ -1,10 +1,12 @@
-Feature:ApiDemos Wifi Test
+Feature:Hepsiburada Urun Test
 
-@wifi
-  Scenario: Goster Gununu
-  Given Prefenceye tikla
-  And Prefence dependencies tikla
-  And Wifi checkbox tikla
-  And Wifi settingse tikla
-  And Wifi settingse "Appium Sevenler Dernegi"yazisini yazin.
-  Then Ok tikla
+@Hepsiburada
+  Scenario: Urun Hepsiburada
+  Given Anasayfada Konum alanına Kklanır.
+  And İl, ilçe ve mahalle sKonumunuz Kaydedildi popup’ı kontrol edilir.
+  And Konumunuz Kaydedildi popup’ı kontrol edilir.
+  And Tab bar üzerinden kategoriler tabına Kklanır.
+  And Herhangi bir kategori seçilip listeleme sayfasına yönlenilir.
+  Then Listeleme sayfasında Yarın Kapında alanında gelen il bilgisi ile anasayfada seçilen il bilgisinin aynı olduğu kontrol edilir.
+
+

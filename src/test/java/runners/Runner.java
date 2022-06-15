@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = {"stepdefinition"},
-        tags = "@wifi",
+        tags = "@Hepsiburada",
         dryRun = false
 
 
